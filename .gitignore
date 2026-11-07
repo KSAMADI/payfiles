@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.turbo/
+out/
+dist/
+__pycache__/
+.venv/
+*.pyc
+.env
+packages/core-rust/target/
+apps/web/public/wasm/
+*.tsbuildinfo

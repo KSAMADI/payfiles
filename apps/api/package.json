@@ -1,0 +1,8 @@
+{
+  "name": "api",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "py -3 -m uvicorn main:app --reload --port 8100"
+  }
+}

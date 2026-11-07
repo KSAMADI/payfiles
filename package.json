@@ -1,0 +1,21 @@
+{
+  "name": "pay",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "dev:web": "npm run dev -w apps/web",
+    "dev:api": "npm run dev -w apps/api",
+    "wasm:build": "wasm-pack build packages/core-rust --target web --out-dir ../../apps/web/public/wasm",
+    "test:pdf": "node scripts/test-pdf.cjs",
+    "pages:build": "npm install --prefix apps/web && cd apps/web && npx --legacy-peer-deps @cloudflare/next-on-pages@latest"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.3"
+  }
+}

@@ -1,0 +1,18 @@
+# Blueprint Render — déploie l'API en un clic (service Docker, plan gratuit).
+# https://dashboard.render.com/blueprints -> "New Blueprint" -> repo -> Apply.
+services:
+  - type: web
+    name: payfiles-api
+    runtime: docker
+    dockerfilePath: ./apps/api/Dockerfile
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: DEV_SECRET
+        generateValue: true     # secret HMAC aléatoire à la création
+      - key: OTP_DEV_CODE
+        value: "123456"         # code fixe pendant le développement
+      - key: OTP_DEV_MODE
+        value: "1"              # mettre "0" en production réelle
+# Plan gratuit : le service se met en veille après ~15 min d'inactivité
+# (cold start ~30-60 s à la première requête).
