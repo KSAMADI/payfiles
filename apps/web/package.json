@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "@cantoo/pdf-lib": "^2.11.1",
-    "@next/swc-win32-x64-msvc": "^15.5.3",
     "@opennextjs/cloudflare": "^1.20.16",
     "bootstrap-icons": "^1.13.2",
     "docx": "^9.15.2",
