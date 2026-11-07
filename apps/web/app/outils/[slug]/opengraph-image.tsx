@@ -2,6 +2,7 @@ import { ImageResponse } from "next/og";
 import { OG_CONTENT_TYPE, OG_SIZE, ogCard } from "@/lib/og";
 import { getToolBySlug } from "@/lib/tools";
 
+export const runtime = "edge";
 export const contentType = OG_CONTENT_TYPE;
 export const size = OG_SIZE;
 

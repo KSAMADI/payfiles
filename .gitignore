@@ -10,3 +10,6 @@ __pycache__/
 packages/core-rust/target/
 apps/web/public/wasm/
 *.tsbuildinfo
+
+# build docker pour deploiement
+.cfbuild-docker/

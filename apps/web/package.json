@@ -3,13 +3,18 @@
   "private": true,
   "version": "0.1.0",
   "scripts": {
-    "dev": "next dev -p 3000",
     "build": "next build",
-    "start": "next start"
+    "dev": "next dev -p 3000",
+    "start": "next start",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
     "@cantoo/pdf-lib": "^2.11.1",
     "@next/swc-win32-x64-msvc": "^15.5.3",
+    "@opennextjs/cloudflare": "^1.20.16",
     "bootstrap-icons": "^1.13.2",
     "docx": "^9.15.2",
     "fflate": "^0.8.3",
@@ -23,6 +28,7 @@
     "@types/node": "^22.10.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "wrangler": "^4.158.0"
   }
 }

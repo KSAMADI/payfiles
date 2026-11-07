@@ -7,8 +7,10 @@
   </defs>
   <rect width="64" height="64" rx="14" fill="#0b0f17"/>
   <rect x="4" y="4" width="56" height="56" rx="11" fill="url(#g)"/>
+  <!-- page avec coin plié -->
   <path d="M20 13h17l9 9v29H20z" fill="#ffffff"/>
   <path d="M37 13l9 9h-9z" fill="#c7d2fe"/>
+  <!-- lignes de contenu -->
   <rect x="25" y="30" width="15" height="3.4" rx="1.7" fill="#4f46e5"/>
   <rect x="25" y="36.5" width="15" height="3.4" rx="1.7" fill="#94a3b8"/>
   <rect x="25" y="43" width="10" height="3.4" rx="1.7" fill="#94a3b8"/>

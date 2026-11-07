@@ -3,6 +3,6 @@
   "outputDirectory": ".vercel/output/static",
   "env": {
     "API_URL": "https://payfiles-api.onrender.com",
-    "NEXT_PUBLIC_SITE_URL": "https://payfiles.pages.dev"
+    "NEXT_PUBLIC_SITE_URL": "https://payfiles-app.pages.dev"
   }
 }

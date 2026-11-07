@@ -4,7 +4,7 @@ Budget : **0 €**. Le plan gratuit suffit largement pour démarrer.
 
 | Bloc | Hébergeur | Plan gratuit | Ce que ça donne |
 |---|---|---|---|
-| Site Next.js | Cloudflare Pages | bande passante **illimitée**, déploiements illimités | `https://payfiles.pages.dev` |
+| Site Next.js | Cloudflare Pages | bande passante **illimitée**, déploiements illimités | `https://payfiles-app.pages.dev` |
 | API FastAPI + LibreOffice | Render | conteneur 512 Mo, veille après 15 min | `https://payfiles-api.onrender.com` |
 
 Mécanique : le site appelle `/api/*` (même origine, cookie OK) et Cloudflare **proxy** vers
@@ -41,7 +41,7 @@ du réveille en 30-60 s (le dashboard temps réel s'en remet tout seul).
    - **Output** : `.vercel/output/static`
    - **Variables** :
      - `API_URL = https://payfiles-api.onrender.com` (votre URL Render de l'étape 1)
-     - `NEXT_PUBLIC_SITE_URL = https://payfiles.pages.dev`
+     - `NEXT_PUBLIC_SITE_URL = https://payfiles-app.pages.dev`
 3. **Deploy** → ~3 min de build → votre site est en ligne en HTTPS.
 
 > **Note Windows** : le build exécuté par Cloudflare tourne sur Linux — c'est celui qui
