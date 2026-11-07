@@ -5,6 +5,7 @@ services:
     name: payfiles-api
     runtime: docker
     dockerfilePath: ./apps/api/Dockerfile
+    dockerContext: ./apps/api
     plan: free
     healthCheckPath: /api/health
     envVars:
