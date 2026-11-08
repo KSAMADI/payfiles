@@ -30,6 +30,14 @@ export default function AboutPage() {
           n'est utilisée pour la publicité : vos fichiers restent sur votre appareil.
         </p>
 
+        <h2 style={{ fontSize: 20 }}>Zéro stockage, point final</h2>
+        <p>
+          <strong>Nous ne gardons aucun fichier.</strong> Ni copie, ni extraction de texte, ni conservation temporaire :
+          tout est traité à la volée dans votre navigateur (ou, pour les conversions Office, détruit immédiatement
+          après le résultat). Une fois la conversion terminée, il n'existe <strong>plus aucune trace</strong> de vos
+          fichiers sur nos serveurs.
+        </p>
+
         <h2 style={{ fontSize: 20 }}>Ce que ce site propose</h2>
         <ul>
           <li>17 outils PDF et images, 100 % gratuits, sans inscription</li>

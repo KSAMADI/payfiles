@@ -58,8 +58,8 @@ export const FAQ: Record<Locale, (tool: ToolDef) => { q: string; a: string }[]> 
     {
       q: "Mes fichiers sont-ils envoyés sur un serveur ?",
       a: tool.server
-        ? "Pour cet outil, le fichier passe brièvement par notre serveur de conversion, puis il est supprimé immédiatement : rien n'est conservé ni analysé."
-        : "Non. Tout est calculé directement dans votre navigateur (WebAssembly et JavaScript). Vos fichiers ne quittent jamais votre ordinateur.",
+        ? "Pour cet outil, le fichier est traité de façon éphémère puis détruit immédiatement : aucune copie n'est faite, aucun texte n'en est extrait, rien n'est conservé ni analysé."
+        : "Non. Tout est calculé directement dans votre navigateur (WebAssembly et JavaScript). Vos fichiers ne quittent jamais votre ordinateur et aucune trace n'est conservée.",
     },
     {
       q: "Est-ce que ça fonctionne sur mobile ?",
@@ -74,8 +74,8 @@ export const FAQ: Record<Locale, (tool: ToolDef) => { q: string; a: string }[]> 
     {
       q: "Are my files uploaded to a server?",
       a: tool.server
-        ? "For this tool, the file briefly passes through our conversion server and is deleted immediately: nothing is stored or analysed."
-        : "No. Everything runs inside your browser (WebAssembly and JavaScript). Your files never leave your computer.",
+        ? "For this tool, the file is processed ephemerally and destroyed immediately: no copies are made, no text is extracted, nothing is retained or analysed."
+        : "No. Everything runs inside your browser (WebAssembly and JavaScript). Your files never leave your computer and no trace is kept.",
     },
     {
       q: "Does it work on mobile?",

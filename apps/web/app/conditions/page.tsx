@@ -33,7 +33,9 @@ export default function TermsPage() {
             contenus illicites) ni à tenter de perturber le service.
           </li>
           <li>
-            Vous restez responsable des fichiers que vous convertissez et de leurs droits d'usage.
+            Vous restez responsable des fichiers que vous convertissez et de leurs droits d'usage. Vos fichiers ne
+            sont <strong>jamais stockés</strong> : aucune copie, aucun texte extrait, tout est détruit juste après la
+            conversion.
           </li>
         </ul>
 

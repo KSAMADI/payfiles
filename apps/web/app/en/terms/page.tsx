@@ -32,7 +32,11 @@ export default function TermsPage() {
             You agree not to upload or convert illegal content (copyright infringing files, malware, unlawful
             material) and not to attempt to disrupt the service.
           </li>
-          <li>You remain responsible for the files you convert and the rights you have to use them.</li>
+          <li>
+            You remain responsible for the files you convert and the rights you have to use them. Your files are{" "}
+            <strong>never stored</strong>: no copies, no text extraction — everything is destroyed right after the
+            conversion.
+          </li>
         </ul>
 
         <h2 style={{ fontSize: 20 }}>3. Intellectual property</h2>

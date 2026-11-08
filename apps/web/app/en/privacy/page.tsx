@@ -27,10 +27,12 @@ export default function PrivacyPage() {
 
         <h2 style={{ fontSize: 20 }}>2. Your files</h2>
         <p>
-          Nearly all conversion tools (PDF, images, Office) run <strong>entirely inside your browser</strong>: your
-          files are never uploaded to our servers, never stored and never analysed. For the few tools that need server
-          processing (Office conversions), the file is transferred ephemerally to the conversion service and{" "}
-          <strong>deleted immediately</strong> once the result is produced: nothing is stored, copied or shared.
+          <strong>PayFiles stores no files. Ever.</strong> Nearly all tools (PDF, images) run{" "}
+          <strong>entirely inside your browser</strong>: your files never even leave your device. For the tools that
+          need server processing (Office conversions), the file is processed ephemerally and{" "}
+          <strong>destroyed immediately</strong> once the result is generated: <strong>no copies are made</strong>,{" "}
+          <strong>no text is extracted</strong> from it, <strong>nothing is retained, indexed, analysed or shared</strong>{" "}
+          — by us or by anyone. The file then ceases to exist on our servers.
         </p>
 
         <h2 style={{ fontSize: 20 }}>3. Data we collect</h2>

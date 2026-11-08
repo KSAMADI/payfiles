@@ -29,6 +29,13 @@ export default function AboutPage() {
           advertising: your files stay on your device.
         </p>
 
+        <h2 style={{ fontSize: 20 }}>Zero storage, full stop</h2>
+        <p>
+          <strong>We keep no files.</strong> No copies, no text extraction, no temporary retention: everything is
+          processed on the fly in your browser (or, for Office conversions, destroyed immediately after the result).
+          Once the conversion is done, <strong>no trace at all</strong> of your files exists on our servers.
+        </p>
+
         <h2 style={{ fontSize: 20 }}>What the site offers</h2>
         <ul>
           <li>17 free PDF and image tools, no signup required</li>

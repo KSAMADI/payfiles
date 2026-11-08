@@ -28,11 +28,13 @@ export default function PrivacyPage() {
 
         <h2 style={{ fontSize: 20 }}>2. Vos fichiers</h2>
         <p>
-          La quasi-totalité des outils de conversion (PDF, images, Office) fonctionne <strong>entièrement dans votre
-          navigateur</strong> : vos fichiers ne sont jamais téléversés sur nos serveurs, ni conservés, ni analysés.
-          Pour les quelques outils qui nécessitent un traitement serveur (conversions Office), le fichier est transmis
-          de façon éphémère au service de conversion et <strong>supprimé immédiatement</strong> après le résultat : rien
-          n'est stocké, copié ou partagé.
+          <strong>PayFiles ne stocke aucun fichier. Jamais.</strong> La quasi-totalité des outils (PDF, images)
+          fonctionne <strong>entièrement dans votre navigateur</strong> : vos fichiers ne quittent même pas votre
+          appareil. Pour les outils qui nécessitent un traitement serveur (conversions Office), le fichier est traité
+          de façon éphémère puis <strong>détruit immédiatement</strong> après la génération du résultat :{" "}
+          <strong>aucune copie n'est faite</strong>, <strong>aucun texte en est extrait</strong>,{" "}
+          <strong>rien n'est conservé, indexé, analysé ni partagé</strong> — ni par nous, ni par qui que ce soit. Le
+          fichier a alors cessé d'exister sur nos serveurs.
         </p>
 
         <h2 style={{ fontSize: 20 }}>3. Données que nous collectons</h2>
