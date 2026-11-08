@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import type { Locale, ToolDef } from "@/lib/tools";
 import { toolPath } from "@/lib/tools";
 
-export const BASE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://payfiles.app").replace(/\/+$/, "");
+export const BASE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://payfiles-app.pages.dev").replace(/\/+$/, "");
 
 export function absoluteUrl(path: string): string {
   return `${BASE_URL}${path}`;

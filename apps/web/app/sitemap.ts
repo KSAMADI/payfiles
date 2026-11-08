@@ -32,6 +32,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  const legal = [
+    { fr: "/confidentialite", en: "/en/privacy", title: "Politique de confidentialité / Privacy Policy" },
+    { fr: "/conditions", en: "/en/terms", title: "Conditions d'utilisation / Terms" },
+    { fr: "/a-propos", en: "/en/about", title: "À propos / About" },
+    { fr: "/contact", en: "/en/contact", title: "Contact" },
+  ];
+  for (const l of legal) {
+    entries.push({
+      url: BASE_URL + l.fr,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.4,
+      alternates: { languages: { fr: BASE_URL + l.fr, en: BASE_URL + l.en, "x-default": BASE_URL + l.fr } },
+    });
+    entries.push({ url: BASE_URL + l.en, lastModified: now, changeFrequency: "monthly", priority: 0.4 });
+  }
+
   for (const tool of TOOLS) {
     const priority = tool.popular ? 0.9 : 0.7;
     entries.push({

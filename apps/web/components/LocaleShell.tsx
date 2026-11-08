@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { CATEGORY_LABELS, TOOLS, getToolBySlug, toolPath, type Category, type Locale } from "@/lib/tools";
+import CookieBar from "./CookieBar";
 
 export function detectLocale(pathname: string): Locale {
   return pathname === "/en" || pathname.startsWith("/en/") ? "en" : "fr";
@@ -63,6 +64,23 @@ export default function LocaleShell({ children }: { children: ReactNode }) {
         <a className="side-link" href={langSwitchHref}>
           <i className="bi bi-translate" /> {t.switchTo}
         </a>
+        <div className="side-group">
+          <div className="side-cat">
+            <i className="bi bi-person-lines-fill" /> {locale === "fr" ? "Le site" : "About"}
+          </div>
+          <Link className="side-link" href={locale === "fr" ? "/a-propos" : "/en/about"}>
+            <i className="bi bi-info-circle" /> {locale === "fr" ? "À propos" : "About us"}
+          </Link>
+          <Link className="side-link" href={locale === "fr" ? "/contact" : "/en/contact"}>
+            <i className="bi bi-envelope" /> {locale === "fr" ? "Contact" : "Contact"}
+          </Link>
+          <Link className="side-link" href={locale === "fr" ? "/confidentialite" : "/en/privacy"}>
+            <i className="bi bi-shield-check" /> {locale === "fr" ? "Confidentialité" : "Privacy"}
+          </Link>
+          <Link className="side-link" href={locale === "fr" ? "/conditions" : "/en/terms"}>
+            <i className="bi bi-journal-text" /> {locale === "fr" ? "Conditions" : "Terms"}
+          </Link>
+        </div>
       </aside>
 
       {/* nav horizontale scrollable — mobile */}
@@ -84,6 +102,7 @@ export default function LocaleShell({ children }: { children: ReactNode }) {
       </nav>
 
       <main className="app-main">{children}</main>
+      <CookieBar locale={locale} />
     </div>
   );
 }
